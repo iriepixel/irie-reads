@@ -38,7 +38,6 @@ class BookShelfs extends Component {
             {shelves.map(shelf => (
               <BookShelf
                 key={shelf.id}
-                shelves={shelves}
                 shelfTitle={shelf.title}
                 books={shelf.books}
                 onChangeShelf={onChangeShelf}

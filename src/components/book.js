@@ -27,9 +27,7 @@ class Book extends Component {
         </div>
         <div className="book-title">{book.title}</div>
         <div className="book-authors">
-          { book.authors.map((author, i) =>
-            <div key={i}>{ author }</div>
-          )}
+          { book.authors ? book.authors.map((author, i) => <div key={i}>{ author }</div>) : <div>N/A</div>}
         </div>
       </div>
     )
@@ -38,7 +36,6 @@ class Book extends Component {
 
 // PropTypes
 Book.propTypes = {
-  shelves: PropTypes.array,
   book: PropTypes.object.isRequired,
   onChangeShelf: PropTypes.func.isRequired
 }

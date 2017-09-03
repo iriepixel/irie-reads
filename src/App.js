@@ -26,6 +26,7 @@ class BooksApp extends React.Component {
           this.setState({
             books: data
           });
+          console.log(data);
       });
   }
 

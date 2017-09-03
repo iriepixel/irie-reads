@@ -43,7 +43,9 @@ body, .app {
 .bookshelf-books {
   text-align: center;
 }
-
+.bookshelf-books--search{
+  margin-top: 80px;
+}
 .open-search {
   position: fixed;
   right: 25px;
